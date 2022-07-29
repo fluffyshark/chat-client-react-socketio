@@ -1,0 +1,40 @@
+@import '~antd/dist/antd.css';
+
+html, body #root {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.message-list {
+  height: 100%;
+  overflow-y: scroll;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-bubble {
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chat-bubble[data-isowner = 'true'] {
+  background-color: #f0f0f0;
+  align-self: flex-end;
+}
